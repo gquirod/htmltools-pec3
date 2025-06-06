@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "imagehover.css": "^2.0.0",
     "svgo": "^3.3.2"
   }
 }
