@@ -1,27 +1,88 @@
 <!DOCTYPE html>
-
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>ECORetro</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+    <section class="relative border-t text-primary-text">
+      <figure class="w-full">
+        <img
+          class="h-[450px] md-2:h-[600px] w-full object-cover overflow-hidden"
+          src="assets/images/front-eco-1.jpg"
+          alt="assets/images/front-eco.jpg"
+          alt="Imagen de una mano sosteniendo una hoja"
+        />
+        <figcaption class="flex flex-col items-center justify-center">
+          <p class="text-4xl/5 font-medium mt-0 mb-2"></p>
+        </figcaption>
+      </figure>
+      <div class="wrapper-container px-2">
+        <div class="flex flex-col wrapper-container px-6">
+          <div class="flex flex-wrap gap-4 wrapper-container px-4 mt-12 mb-12">
+            <p class="flex-[1_1_100%] md-1:flex-[calc(45%-.5rem)] mb-4 text-2xl leading-1 font-comfortaa">
+              Desde EcoRetro el objetivo es crecer a la par, sin dejar a nada ni nadie por el camino. Crecer de forma consciente, crecer juntos.
+            </p>
+            <p class="flex-[1_1_100%] mb-4 md-1:flex-[calc(55%-.5rem)]">
+              Creemos en la posibilidad de un futuro más estable y consciente en el crecimiento económico no suponga un deterioro medioambiental ni de nuestros barrios. Por ello establecemos ciertas bases que poner en práctica en nuestras charlas y talleres.
+            </p>
+          </div>
+          <ul class="flex flex-col gap-1 mt-4 list-none wrapper-container">
+            <include src="./views/list-element.html">
+              { 
+                "number": "1", 
+                "title": "Coordinación", 
+                "description": "Necesidad de aprender de forma transversal las implicaciones de todos los ámbitos relacionados dentro del flujo de este tipo de proyectos, conociendo así con qué límites empezamos a construir un futuro mejor." 
+              }
+            </include>
+            <include src="./views/list-element.html">
+              { 
+                "number": "2", 
+                "title": "Organización", 
+                "description": "Entendidos los límites, organizar proyectos a largo plazo considerando los diferentes contextos aplicables caso por caso." 
+              }
+            </include>
+            <include src="./views/list-element.html">
+              { 
+                "number": "3", 
+                "title": "Planificación", 
+                "description": "Crear planes de economía circular aplicables a nivel micro en comunidades controladas, para luego poder utilizar dichos experimentos en la creación de proyecto a gran escala." 
+              }
+            </include>
+          </ul>
+          <figure class="wrapper-container px-6 my-6">
+            <blockquote class="block mb-4">
+              <p class="text-[1.70rem] leading-tight font-medium mt-0 text-primary-text">
+                "Sabemos lo difícil que es denunciar la necesidad de cambios en nuestros hábitos de producción y consumo sin antes mostrar cómo se aplicarían estos y en qué afectarían a nuestro día a día, ese es nuestro reto."
+              </p>
+            </blockquote>
+            <figcaption class="mt-1 mb-4 text-sm text-primary">
+              <p><span class="text-primary-text">— </span>Triana Sastra, fundadora de "EcoRetro".</p>
+            </figcaption>
+          </figure>
+          <div class="w-full">
+            <img
+              src="assets/images/front-eco-2.jpg"
+              alt="Imagen de una pegatina en un poste que pone planeta tierra primero"
+              class="w-full object-cover h-[400px] overflow-hidden object-center"
+            />
+          </div>
+          <div class="flex flex-col xl:mx-12 md-2:px-12 my-12 px-6 mx-3">
+          <p> 
+            Si quieres estar al tanto de nuestros nuevos cursos y talleres, o crees que podrías colaborar con el proyecto de alguna forma, inscribete en nuestra newsletter para saber cuándo nos podremos encontrar.
+          </p>
+          </div>
+          <button type="button" class="p-2 bg-primary text-black m-auto rounded">Apúntate a la newsletter</button>
+        </div>
+      </div>
+      
+    </section>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
   </body>
 </html>

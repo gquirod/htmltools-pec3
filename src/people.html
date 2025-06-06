@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>ECORetro</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <section class="md-2:px-12 py-12 px-6">
+        <h1 class="xl:text-[2.5rem] text-[calc(1.375rem+1.5vw)] text-center text-primary-text font-medium mt-0 mb-12 px-6 lg:pt-12 pt-6">Ponentes</h1>
+        <div class="flex flex-wrap md-2:px-12 px-6 gap-12 justify-center">
+             <include src="./views/card.html">
+              { 
+                "image" : "assets/images/person-6.jpg",
+                "nombre": "Roberto Pietro", 
+                "descripcion": "Divulgador de accesibilidad urbana." 
+              }
+            </include>
+            <include src="./views/card.html">
+              { 
+                "image" : "assets/images/person-5.jpg",
+                "nombre": "Mónica Ortegana", 
+                "descripcion": "Directora del centro de ayuda a las PYMES." 
+              }
+            </include>
+            <include src="./views/card.html">
+              { 
+                "image" : "assets/images/person-3.jpg",
+                "nombre": "Juana Sanz",
+                "descripcion": "Profesora de ambientales en la UPO." 
+              }
+            </include>
+            <include src="./views/card.html">
+              { 
+                "image" : "assets/images/person-2.jpg",
+                "nombre": "Terelu Meseta",
+                "descripcion": "Investigadora y subdirectora de la estación biológica de Doañana." 
+              }
+            </include>
+            <include src="./views/card.html">
+              { 
+                "image" : "assets/images/person-1.jpg",
+                "nombre": "Marta Villa",
+                "descripcion": "Economista y ecologista." 
+              }
+            </include>
+            <include src="./views/card.html">
+              { 
+                "image" : "assets/images/person-4.jpg",
+                "nombre": "Ricardo Recados",
+                "descripcion": "Secretario general del centro de planificación urbanístia de España" 
+              }
+            </include>
+        </div>
+    </section>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

@@ -1,0 +1,11 @@
+/*------------------------------------*\
+  #OBJECTS
+\*------------------------------------*/
+
+.wrapper-container {
+    @apply xl:mx-12 mx-1 md-2:px-12
+}
+
+.footer-link {
+    @apply block decoration-0 p-2
+}

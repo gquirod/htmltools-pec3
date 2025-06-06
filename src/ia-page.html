@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>ECORetro</title>
+  </head>
+  <body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white pt-8 px-4 sm:px-6 lg:px-8">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between py-2">
+      <div class="text-lg font-semibold">Cooking contest 2024 edition</div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium px-4 py-2">Home</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium px-4 py-2">The contest</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium px-4 py-2">Recipes</a>
+        <a href="#" class="bg-black text-white font-medium px-4 py-2 rounded">Contestants</a>
+      </div>
+
+      <!-- Hamburger Menu Toggle -->
+      <div class="md:hidden flex items-center">
+        <label for="menu-toggle" class="cursor-pointer">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="md:hidden hidden pb-4">
+      <a href="#" class="block py-2 text-gray-700 font-medium">Home</a>
+      <a href="#" class="block py-2 text-gray-700 font-medium">The contest</a>
+      <a href="#" class="block py-2 text-gray-700 font-medium">Recipes</a>
+      <a href="#" class="block py-2 bg-black text-white px-3 py-1 rounded font-medium">Contestants</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="pt-10 pb-10 px-4 sm:px-6 lg:px-8">
+    <section class="text-center">
+      <h1 class="text-[2.5rem] font-bold pt-10 pb-6">Contestants</h1>
+      <p class="text-gray-500">This section describes the recipes of the best contestants</p>
+    </section>
+
+    <!-- Full width image -->
+    <div class="max-w-7xl mx-auto w-full h-[600px] mt-32 mb-10">
+      <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" alt="Contest image"
+        class="w-full h-full object-cover rounded-md">
+    </div>
+
+    <!-- Recipes Section -->
+    <section class="max-w-7xl mx-auto pt-10 pb-10">
+      <h2 class="text-2xl font-semibold mb-1">The recipes</h2>
+      <p class="text-gray-600 mb-6">These are the recipes of the best contestants</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-xl shadow-gray-300 rounded-lg p-6 space-y-4">
+          <h3 class="text-lg font-semibold mb-8">Spicy Paella</h3>
+          <div class="flex items-center space-x-4">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Avatar"
+              class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="font-medium">Carlos Ramírez</p>
+              <p class="text-sm text-gray-500">A bold take on the Spanish classic with a twist of chili.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-xl shadow-gray-300 rounded-lg p-6 space-y-4">
+          <h3 class="text-lg font-semibold mb-8">Green Garden Salad</h3>
+          <div class="flex items-center space-x-4">
+            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="Avatar"
+              class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="font-medium">Marie Curie</p>
+              <p class="text-sm text-gray-500">Fresh, organic, and full of crunch and flavor.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-xl shadow-gray-300 rounded-lg p-6 space-y-4">
+          <h3 class="text-lg font-semibold mb-8">Chocolate Heaven</h3>
+          <div class="flex items-center space-x-4">
+            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Avatar"
+              class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="font-medium">Luca Bianchi</p>
+              <p class="text-sm text-gray-500">A dessert to die for — rich, dark, and decadent.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+<footer class="px-4 sm:px-6 lg:px-8 pb-10">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 pt-10 border-t border-gray-300">
+      
+      <!-- Left Column -->
+    <div class="flex flex-col justify-between h-full">
+        <h3 class="font-semibold text-lg">Cooking contest 2024 edition</h3>
+        <div class="flex space-x-4 mt-6">
+          <a href="#" aria-label="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="w-6 h-6 filter grayscale">
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="w-6 h-6 filter grayscale">
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="w-6 h-6 filter grayscale">
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6 filter grayscale">
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+        <div>
+          <h4 class="font-semibold mb-2">Recipes</h4>
+          <ul class="space-y-1 text-gray-600">
+            <li>Spicy Paella</li>
+            <li>Green Garden Salad</li>
+            <li>Chocolate Heaven</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Contestants</h4>
+          <ul class="space-y-1 text-gray-600">
+            <li>Carlos Ramírez</li>
+            <li>Marie Curie</li>
+            <li>Luca Bianchi</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Contest editions</h4>
+          <ul class="space-y-1 text-gray-600">
+            <li>2024</li>
+            <li>2023</li>
+            <li>2022</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
