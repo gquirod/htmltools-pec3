@@ -7,5 +7,5 @@
 }
 
 .footer-link {
-    @apply block decoration-0 p-2
+    @apply block decoration-0 p-2 transition-colors hover:text-[#0a58ca]
 }
